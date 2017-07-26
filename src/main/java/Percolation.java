@@ -28,7 +28,7 @@ public class Percolation {
 
     public void open(int row, int col) {
         if(row > sideLength || col > sideLength){
-            throw new IllegalArgumentException("either row or coll exceed limit");
+            throw new IllegalArgumentException("either row or col exceed limit: " + row +", " + col);
         }
         row--;
         col--;
